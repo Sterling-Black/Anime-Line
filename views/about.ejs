@@ -1,0 +1,54 @@
+<%- include("header") %>
+
+<div class="section" style="text-align: center; padding-top: 0px;">
+    <%const age = year - 2004;%>
+    <div class="greetings">
+        <div class="greeting">
+            <h1>About Website</h1>
+            <h2>Welcome to Anime Line</h2>
+            <p>This is just a basic anime website that offers some basic functionalities to search or show case some animes and mangas.<br>
+            This web app uses a third party API to obtain the images you can see.
+            </p>
+        </div>    
+        <div class="greeting">
+            <h1>About Developer</h1>
+            <img src="Images/img3.jpg" class="avatar">
+            <h2>Hi there😊</h2>
+            <p>My name is Tambong Stercy Takem a solo cameroonian developer of <%= age %> years old</p>
+        </div>
+
+    </div>
+    <div class="skill">
+        <h2>My skills</h2>
+        <div class="skill-row">
+            <h3 class="fr">Programming</h3>
+            <img class="skill1" src="https://media1.giphy.com/media/VdoIFLsMIlwzfKD520/200w.webp?cid=ecf05e47n0dryvcrs6qwy96jyse0044598w8b75b4xlttms0&rid=200w.webp&ct=s" alt="">
+            <p>I started studing C programming at the age of 15 and javascript at the age of 17.<br>
+            I actually created my first game in C that is "Truth or Dare" when i was 16years old.
+            </p>
+        </div>
+        <div class="skill-row sk2">
+            <h3 class="fr">Web Designing</h3>
+            <img class="skill2" src="Images/skill.png" alt="">
+            <p>I also started learning HTML and CSS at the age of 15.<br>
+            I studied jQuery, Node, Mongodb and React.
+            </p>
+        </div>
+            
+    </div>
+
+
+    <div class="contact">
+        <h1>Intrested?</h1>
+        <h2>Do you like what i do?</h2>
+        <p>I'm very opened so feel free to contact me through any of these platforms provided below.</p>
+        <a class="btn" href="mailto:tambongsterling@gmail.com"><span>CONTACT ME</span></a>
+    </div>
+    
+
+</div>
+
+
+
+
+<%- include("footer") %>

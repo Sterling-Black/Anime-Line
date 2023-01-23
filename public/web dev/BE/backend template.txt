@@ -1,0 +1,35 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
+const request = require("request");
+
+const { urlencoded } = require("body-parser");
+
+
+const app = express();
+
+app.use(bodyParser.urlencoded({extended: true}));
+app.set("view engine","ejs");
+
+app.get("/",function(req,res){
+    res.send("Hello!");
+})
+
+app.listen(3000,function(){
+    console.log("Server is successfully running on port 3000");
+});
+
+
+//npm init
+//npm install express body-parser ejs
+//npm install request (it is for API's)
+//npm i ejs
+//npm i mongoose
+
+//pass for mongoDB atlas
+qhFuXh@9hCd9kXe
+
+//mongosh online DB
+mongosh "mongodb+srv://cluster0.lt64gbo.mongodb.net/myFirstDatabase" --apiVersion 1 --username admin-Ster 
+cy
+//this is to use on command line on your pc

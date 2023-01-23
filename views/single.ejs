@@ -1,0 +1,44 @@
+<%- include("header") -%>
+
+
+
+
+    <div class="section">
+        
+        <% const type = Anime[0].type %>
+        <h2><%=type%></h2>
+
+        <div class="grids">
+            <% 
+                Anime.forEach((anime, index)=>{ 
+                
+                if(index < 40 ){
+
+                    var { title_english: title1, title: title2, images: {jpg: {image_url: img}}} = anime;
+                    var title;
+
+                if(title1 === null){
+                    title = title2;
+                }else{
+                    title = title1;
+                }
+                
+                if(title.length > 18){
+                    title = title.slice(0,15);
+                    title += "...";
+                }
+            %>
+
+            <div class="card" >
+                <img src="<%= img %>" alt="<%= title %>" />
+                <div class="title" >
+                    <span> <%= title %> </span>
+                </div>
+            </div>  
+
+            <% }}); %>
+        </div>
+    </div> 
+
+
+<%- include("footer") %>

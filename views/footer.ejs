@@ -1,0 +1,86 @@
+   
+   
+   
+   
+   <footer id="footer">
+       
+    <a class="footer-link" href="https://www.linkedin.com/in/tambong-sterling-815913246">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/@SterlingTambong">Twitter</a>
+    <a class="footer-link" href="https://www.facebook.com/tambong.stercy">Facebook</a>
+        <p>Ⓒ  copyrigth <%= year %><br/>
+        Tambong Stercy Takem</p>
+    </footer>
+    <script> 
+        const element = document.querySelector(".bar");
+        
+        function move() {
+
+            $(".search").css("display","none");
+
+            let width = 0;
+
+            if (width < 150){
+
+                element.style.display = "inline-block"
+                const id = setInterval(frame, 1);
+
+                function frame() {
+
+                    if (width > 150) {
+                        clearInterval(id);
+                        element.focus();
+                    } else {
+                        width += 2; 
+                        element.style.width = width + "px";
+                    }
+                }       
+            }
+        }
+        
+        function myFunction() {
+            var x = document.querySelector("#myDiv");
+
+            if (x.className === "div") {
+                x.className += " responsive";
+            } else {
+                x.className = "div";
+            }
+
+        }
+
+
+        
+        const totalAction = document.querySelector(".form").action;
+        const links = document.querySelectorAll(".link");
+        const length = totalAction.length;
+        var action = "";
+
+        for(let i = length-1; totalAction[i] != "/"; i--){
+            action += totalAction[i];
+        }
+        action = [...action].reverse().join("");
+        console.log(action);
+
+        links.forEach( function (link){
+            
+            if(link.textContent.toLowerCase() === action){
+                link.classList.add("focus");
+            }
+        });
+        
+        window.addEventListener("scroll", (event) => {
+            let dist = document.querySelector("body").clientHeight;
+            let scroll = this.scrollY;
+            if(scroll >= dist/2){
+                document.querySelector("#upward").style.display = "block";
+                document.querySelector("#downward").style.display = "none";
+
+            }else{
+                document.querySelector("#upward").style.display = "none";
+                document.querySelector("#downward").style.display = "block";
+            }
+        });
+
+    </script>
+</body>
+</html>

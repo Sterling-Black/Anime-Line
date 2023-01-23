@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Anime Website">
+    <meta name="keywords" content="Anime,search,line,Tambong,Stercy,Cameroonian,Cameroon">
+    <meta name="author" content="Tambong Stercy Takem">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Line</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.ico">
+    <!-- <link rel="icon" href="Images/boy (2).png"> -->
+    
+
+    <script src="Boot/fontawesome.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/107f77d2cd.js"></script>
+    <script src="jQuery/jquery.js"></script>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lilita+One&family=Montez&family=Montserrat&display=swap" rel="stylesheet">    
+</head>
+<body>
+    
+    <% let rout;
+    if(route===""){
+        rout="home"
+    }else{
+        rout=route
+    }
+    %>
+    <header>
+        <div class="div" id="myDiv">
+            <span id="logo">Anime Line</span>
+            <button class="toggle" onclick="myFunction()"><i class="fa-solid fa-bars" id="toggle"></i></button>
+            <ul id="links">
+                <li><a class="link" href="/">Home</a></li>
+                <li><a class="link" href="/anime">Anime</a></li>
+                <li><a class="link" href="/manga">Manga</a></li>
+                <li><a class="link" href="/about">About</a></li>
+            </ul>
+            <form action="/<%=rout%>" method="post" class="form">
+                <div class="search" onclick="move()"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" name="search" class="bar" placeholder="anime name" autocomplete="off"/>
+            </form>
+        </div>
+        
+    </header>
+    
+    
+    <button id="upward"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></button>
+    
+    <button id="downward"><a href="#footer"><i class="fa-solid fa-arrow-down"></i></a></button>
+    
+  
+     
+   

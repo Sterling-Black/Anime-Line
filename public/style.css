@@ -1,0 +1,386 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* header */
+header{
+    text-align: right;
+    position: relative;
+    padding: 1rem 20px 1.4rem 1rem;
+    background-color: #7e75fa;
+    color: #fff;
+}
+
+.div{
+    text-align: left;
+    position: relative;
+    padding-top: 0.6rem;
+}
+
+#logo{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header ul{
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 17px 0;
+    position: absolute;
+    right: 0;
+}
+
+header li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 6rem;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover,
+a:focus,
+.focus{
+    color: #b1abf8;
+}
+
+.toggle{
+    color: #fff;
+    border: none;
+    background: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    border-radius: 15% ;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 3rem;
+}
+
+.toggle:hover{
+    cursor: pointer;
+}
+
+form{
+    text-align: left;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.bar{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #000102b7;
+    width: 0;
+    display: none;
+    border-radius: 2%;
+    text-align: center;
+    caret-color: #000000e3;
+}
+
+::placeholder{
+    color: #3f44576c;
+    font-size: 1.05rem;
+}
+
+/* .bar:active,
+.bar:focus{
+    border: 0.5px black solid;
+    transform: scale(1.15);
+} */
+
+.search{
+    display: inline-block;
+    border-radius: 5%;
+    width: 20px;
+    height: 20px;
+    background: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.search:active{
+    transform: scale(0.8);
+}
+
+.up, .down{
+    text-align: right;
+}
+
+#upward, #downward{
+    font-size: 1.4rem;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    background-color: #8246f3;
+    color: #fff;
+    border: none;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    display: none;
+}
+#upward a, #downward a{
+    color: #ffffff;
+}
+#downward{
+    z-index: 3;
+    position: fixed;
+    left: 20px;
+    top: 90%;
+}
+
+
+
+
+/* body */
+.section{
+    padding: 40px 20px 40px 20px;
+    border-bottom: solid black 1px;
+    /* color: #5043fc; */
+}
+
+.section h1{
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+.section h2{
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.section a{
+    color: #2c1ef3;
+    font-size: 1.4rem;
+}
+
+.grids{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    height: 300px;
+    transition: scale 0.08s linear;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #000;
+    scale: 1.05;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    padding: 0px  0px 10px 0px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: rotateX('20deg');
+    text-align: center;
+}
+
+.title span{
+    position: relative;
+    top:  20px;
+}
+
+.greetings{
+    margin-bottom: 100px;
+    line-height: 2;
+}
+
+.greetings p, .contact p{
+    width: 60%;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+.greeting{
+    margin: 90px 0;
+    height: auto;
+    width: auto;
+}
+
+.avatar{
+    width: 30%;
+    height: 35%;
+    border-radius: 50%;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 50px auto 90px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.skill1{
+    width: 25%;
+    float: left;
+    margin-right: 20px;
+}
+
+.skill2{
+    width: 25%;
+    float: right;
+    margin-left: 20px;
+}
+.fr{
+    text-align: center;
+}
+.sk2{
+    margin-top: 3%;
+}
+
+.contact{
+    margin-top: 15%;
+}
+
+.btn span{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to bottom, #7e75fa, #0035c5);
+    padding: 4px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 30px auto 0px auto;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+.btn:hover span{
+    background-image: none;
+    background-color: #7e75fa;
+    cursor: pointer;
+}
+
+
+/* footer */
+footer{
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #7d75f7;
+    padding: 20px 0 10px 0;
+    color: #fff;
+}
+
+.footer-link{
+    font-size: 0.8rem;
+    margin: 0px 20px 0px 20px;
+    margin-bottom: 100px;
+    line-height: 2.1;
+}
+
+footer p{
+    line-height: 2;
+    margin-top: 25px;
+    font-size: 0.7rem;
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 900px){
+    header ul{
+        display: none;
+        position: relative;
+        padding: 0;
+        background-color: #7e75fa;
+    }
+    header li{
+        line-height: 2;
+        border-bottom: #fff 2px solid;
+        margin: 0;
+    }
+    form{
+        display: none;
+        position: relative;
+    }
+    .toggle{
+        display: inline-block;
+    }
+    .responsive {position: relative;}
+    .responsive ul {
+        display: block;
+        text-align: left;
+        margin-top: 20px;
+      }
+    .responsive li {
+        display: block;
+        text-align: left;
+     }
+     .responsive form{
+        display: block;
+     };
+}
+
+@media screen and (min-width: 1500px){
+    .skill-row{
+        text-align: center;
+        width: 75%;
+    }
+    .skill1,
+    .skill2{
+        width: 50%;
+        float: none;
+        margin: 0 30% 0 25%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    
+    .grids{
+        display: block;
+        text-align: center;
+    }
+    .card{
+        width: 68%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .avatar{
+        width: 250px;
+    }
+    .skill-row{
+        text-align: center;
+        width: 75%;
+    }
+    .skill1,
+    .skill2{
+        width: 50%;
+        float: none;
+        margin: 0 30% 0 25%;
+    }
+}
