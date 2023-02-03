@@ -79,7 +79,7 @@ form{
     font-size: 1rem;
     line-height: 20px;
     color: #000102b7;
-    width: 0;
+    /* width: 150px; */
     display: none;
     border-radius: 2%;
     text-align: center;
